@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Run Shop" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="br.com.davi.shop.ShopApplication" />
+    <module name="shop" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
