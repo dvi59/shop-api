@@ -11,7 +11,7 @@ import java.util.*;
 
 @RestController
 @RequestMapping("/vendedor")
-public class VendedorController {
+public class VendedorController{
 
     @Autowired
     private VendedorService vendedorService;
@@ -20,15 +20,13 @@ public class VendedorController {
     public Vendedor cadastrar(@RequestBody Vendedor vendedor){
         return vendedorService.cadastrar(vendedor);
     }
-    @GetMapping
-    @ResponseStatus(HttpStatus.OK)
-    public List<Vendedor> listaVendedor(){
-        return vendedorService.listaVendedor();
-    }
+
     @GetMapping("/{id}")
     @ResponseStatus(HttpStatus.OK)
     public Vendedor buscarVendedor(@PathVariable("id") Long id){
         return vendedorService.buscarVendedor(id)
                 .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND));
     }
+
+
 }
