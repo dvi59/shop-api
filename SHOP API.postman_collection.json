@@ -1,0 +1,94 @@
+{
+	"info": {
+		"_postman_id": "256f0203-af32-4427-9ca6-eda500307a59",
+		"name": "SHOP API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24924391"
+	},
+	"item": [
+		{
+			"name": "TotalVendasPorPeriodo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/venda/?dataInicio=2023-05-15&dataFim=2023-05-19",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"venda",
+						""
+					],
+					"query": [
+						{
+							"key": "dataInicio",
+							"value": "2023-05-15"
+						},
+						{
+							"key": "dataFim",
+							"value": "2023-05-19"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TotalVendasPorPeriodoVendedor",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/venda/1?dataInicio=2023-05-15&dataFim=2023-05-19",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"venda",
+						"1"
+					],
+					"query": [
+						{
+							"key": "dataInicio",
+							"value": "2023-05-15"
+						},
+						{
+							"key": "dataFim",
+							"value": "2023-05-19"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Vender",
+			"request": {
+				"method": "POST",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Cadastro Vendedor",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/vendedor",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"vendedor"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
